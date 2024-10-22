@@ -1,0 +1,64 @@
+/* Default navigation style */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* Space elements evenly */
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure the navbar takes full width */
+  }
+  
+  .navbar li {
+    display: inline-block;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .login-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cart-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Default for larger screens (navigation is visible) */
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Evenly space elements */
+    width: 100%; /* Full-width navbar */
+  }
+  
+  /* Mobile view: Hide navbar initially */
+  @media (max-width: 768px) {
+    .navbar {
+      display: none; /* Hidden on small screens initially */
+    }
+  
+    .navbar.open {
+      display: flex; /* Show when hamburger is clicked */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: white;
+      padding: 20px;
+      border-top: 1px solid #ccc;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  

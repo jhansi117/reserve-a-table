@@ -1,0 +1,29 @@
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hamburger img {
+    width: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  }
+  

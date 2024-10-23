@@ -1,0 +1,110 @@
+.main-container {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Vertically align items */
+  background-color: #495E57; /* Background color */
+  color: white; /* Text color */
+  padding: 100px; /* Padding around the container */
+}
+
+.sub-container {
+  display: flex;
+  justify-content: center; /* Center both sections */
+  align-items: center; /* Vertically align text and image */
+  gap: 200px; /* Space between text and image */
+  max-width: 1200px; /* Set max width */
+  width: 100%; /* Take full width */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.text-section-main {
+  max-width: 400px; /* Set max width for alignment */
+  text-align: left; /* Left-align text */
+}
+
+.para-section-main {
+  width: 250px; /* Fixed width */
+  font-weight: 700;
+}
+
+.little-lemon {
+  color: #F4CE14; /* Highlighted text color */
+  font-size: 48px;
+}
+
+.image-section-main {
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+}
+
+.image-section-main img {
+  max-width: 100%; /* Make image responsive */
+  width: 200px; /* Let width adjust automatically */
+  height: 200px; /* Fixed height */
+  border-radius: 15px; /* Rounded corners */
+}
+
+.reserve-button {
+  background-color: #F4CE14; /* Button color */
+  color: #333; /* Button text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Button padding */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 16px; /* Font size */
+  font-weight: 700;
+  border-radius: 20px; /* Rounded corners */
+  margin-top: 15px; /* Space above the button */
+}
+
+.reserve-button:hover {
+  background-color: #FFA600; /* Change button color on hover */
+}
+
+/* Limiting words in the description */
+.text-section-main p {
+  line-height: 1.5; /* Increase line height */
+  max-width: 100%; /* Prevent overflow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sub-container {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Reduce space between text and image */
+  }
+
+  .text-section-main {
+    max-width: 100%; /* Full width on small screens */
+    text-align: center; /* Center text */
+  }
+
+  .para-section-main {
+    width: auto; /* Allow width to adjust */
+  }
+
+  .image-section-main img {
+    width: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain image ratio */
+  }
+
+  .little-lemon {
+    font-size: 36px; /* Reduce text size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-section-main img {
+    width: 100%; /* Full width on very small screens */
+    height: auto; /* Keep aspect ratio */
+  }
+
+  .reserve-button {
+    font-size: 14px; /* Reduce button font size */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+
+  .little-lemon {
+    font-size: 28px; /* Further reduce text size */
+  }
+}

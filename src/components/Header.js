@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import Nav from './Nav';
 import logo from '../assets/images/logo.svg';
 import './Header.css';
-import hamburger from '../assets/images/hamburger.svg'
+import hamburger from '../assets/images/hamburger.svg';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,10 @@ function Header() {
 
   return (
     <header className="header">
-      <img src={logo} className="logo" alt="logo" />
+      {/* Wrap logo in Link to navigate to Home */}
+      <Link to="/">
+        <img src={logo} className="logo" alt="logo" />
+      </Link>
       <button className="hamburger" onClick={toggleMenu}>
         <img src={hamburger} alt="Hamburger Icon" />
       </button>

@@ -22,6 +22,7 @@
   
   .big-logo {
     width: 200px; /* Adjust size as per your design */
+    border-radius: 10px;
   }
   
   /* Doormat Navigation */

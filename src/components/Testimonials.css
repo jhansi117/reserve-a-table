@@ -1,0 +1,47 @@
+.testimonials-container {
+  padding: 40px; /* Padding around the container */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 1200px; /* Max width for larger screens */
+  margin: auto; /* Center the container */
+}
+
+.testi-heading {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.testimonial-slide {
+  text-align: center; /* Center-align the slide content */
+}
+
+.dish-image {
+  width: 100%; /* Make image responsive */
+  max-width: 300px; /* Set a max width for the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin: 0 auto 15px auto; /* Center the image and space below it */
+}
+
+.star-rating {
+  color: gold; /* Gold color for star rating */
+  font-size: 20px; /* Font size for stars */
+  margin-bottom: 10px; /* Space below the star rating */
+}
+
+.testi-comments {
+  font-size: 16px; /* Font size for comments */
+  line-height: 1.5; /* Increase line height for better readability */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .testimonials-container {
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .dish-image {
+    max-width: 80%; /* Adjust max width on smaller screens */
+  }
+}

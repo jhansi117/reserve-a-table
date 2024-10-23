@@ -1,0 +1,58 @@
+.card {
+    background-color: #fff; /* Card background color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    max-width: 300px; /* Limit card width */
+    margin: 20px; /* Space around card */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .card-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .card-content {
+    padding: 15px; /* Padding inside card */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between; /* Space between title and price */
+    align-items: center; /* Center vertically */
+  }
+  
+  .card-title {
+    font-size: 1.5rem; /* Title font size */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .card-price {
+    font-size: 1.2rem; /* Price font size */
+    color: #F4CE14; /* Price color */
+  }
+  
+  .card-description {
+    margin: 10px 0; /* Margin for description */
+    line-height: 1.5; /* Increase line height for readability */
+  }
+  
+  .add-to-cart-button {
+    background-color: #F4CE14; /* Button color */
+    color: #333; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px; /* Button padding */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #FFA600; /* Change button color on hover */
+  }
+  

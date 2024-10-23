@@ -12,6 +12,13 @@
   
   .navbar li {
     display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px;
+  }
+
+  .navbar li:hover{
+    text-decoration: underline;
   }
   
   .navbar a {

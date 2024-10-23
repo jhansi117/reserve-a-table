@@ -1,29 +1,33 @@
 /* Header styling */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .logo {
-    width: 150px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white; /* Ensure background color is set for visibility */
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.logo {
+  width: 150px;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger img {
+  width: 30px;
+}
+
+@media (max-width: 768px) {
   .hamburger {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
+      display: block; /* Show hamburger menu on small screens */
   }
-  
-  .hamburger img {
-    width: 30px;
-  }
-  
-  @media (max-width: 768px) {
-    .hamburger {
-      display: block;
-    }
-  }
-  
+}

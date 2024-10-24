@@ -7,7 +7,7 @@ function Main() {
   const navigate = useNavigate();
 
   const handleReserveTable = () => {
-    navigate("/reservations"); // Navigates to the reservations page
+    navigate("/booking"); // Navigates to the reservations page
   };
 
   return (

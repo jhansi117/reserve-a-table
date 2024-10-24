@@ -1,0 +1,132 @@
+/* General Styles */
+
+.booking-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #495e57;
+  }
+  
+  /* H1 Styling */
+  .reservations-title {
+    color: #f4ce14;
+    font-size: 2.5rem;
+  }
+  
+  /* Radio buttons section */
+  .seating-selection {
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  .seating-selection input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .seating-selection label {
+    color: #edefee;
+    font-weight: 600;
+  }
+  
+  /* Form section */
+  .reserve-form-section {
+    background-color: #495e57;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+  }
+  
+  .reserve-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .reserve-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* H3 Styling */
+  .reserve-date {
+    color: #edefee;
+    margin-bottom: 10px;
+  }
+  #reserve-diners {
+    color: #edefee;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+
+  #reserve-occasion{
+    color: #edefee;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+
+  #reserve-time{
+    color: #edefee;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+
+  .select-occasion{
+    margin-left: 40px;
+  }
+  
+  /* Dropdown Styling */
+  select,
+  input[id="res-date"]
+   {
+    background-color: #edefee;
+    color: #495e57;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    border: none;
+  }
+  
+  /* Diners Grid Styling */
+  .select-diners {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Images Section */
+  .images-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  .images-section img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Reserve Button Styling */
+  .reserve-button {
+    background-color: #f4ce14;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reserve-button:hover {
+    background-color: #e0b812;
+  }
+  

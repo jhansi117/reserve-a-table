@@ -12,7 +12,7 @@ function Nav({ isOpen }) {
         <li onClick={() => navigate('/')}>Home</li>
         <li onClick={() => navigate('/about')}>About</li>
         <li onClick={() => navigate('/menu')}>Menu</li>
-        <li onClick={() => navigate('/reservations')}>Reservations</li>
+        <li onClick={() => navigate('/booking')}>Reservation</li>
       </ul>
     </nav>
   );

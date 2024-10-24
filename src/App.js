@@ -1,7 +1,8 @@
 import React from 'react';
 import Home from './pages/Home'
 import About from './components/About'
-import Reservations from './pages/Reservations'
+import Booking from './pages/Booking'
+import Confirmation from './pages/Confirmation';
 import Menu from './pages/Menu'
 import Header from './components/Header'
 import './App.css'
@@ -16,7 +17,8 @@ function App() {
           <Route path='/home' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/menu' element={<Menu/>}/>
-          <Route path='/reservations' element={<Reservations/>}/>
+          <Route path='/booking' element={<Booking/>}/>
+          <Route path='/confirmation' element={<Confirmation/>}/>
       </Routes>
     </BrowserRouter>
   );
